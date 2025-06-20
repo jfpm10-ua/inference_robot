@@ -1,0 +1,43 @@
+Version 0.5
+-Changes
+    - Se incluye en P1Launcher la posibilidad de lanzar un sistema experto difuso
+    - Se añade el fichero expertSystem.py para hacer el segundo ejercicio de la práctica
+    - Se modifica el cálculo de la puntuación de los objetivos de tipo triángulo para penalizar aquellas
+        trayectorias que no den la vuelta alrededor del punto 'medio'
+- Bug Fixes
+    - Eliminada referencia a una variable no instanciada que provocaba un warning
+
+Version 0.4
+-Changes
+    - Objetivos de tipo triángulo se pintan en pantalla
+    - Objetivos de tipo triángulo se pasan como objetivo a los sistemas expertos preparados para tratar con ellos
+    - la clase Robot devuelve la velocidad lineal y angular a la que se está moviendo el robot en la llamada al método getPose() adicionalmente a la información de la pose que ya se devolvía.
+    - Cuando el robot termina el recorrido, se pinta una animación que muestra la trayectoria del robot
+- Bug Fixes
+    - El error que provocaba saltos en la posición del robot ha sido resuelto
+
+
+Versión 0.3
+- Changes
+    - La función de cálculo de la puntuación de la trayectoria penaliza más por el tiempo que tarda en hacerse el recorrido
+    - La clase Segmento se comporta ahora como un objetivo que puede ser de tipo segmento o de 
+      tipo triángulo. El nombre de la clase pasa a ser Objetivo. El nombre del fichero se mantiene por compatibilidad. Se han añadido los métodos getMedio, que devuelve el tercer punto en caso de ser un triángulo, y el método getType que nos devuelve 1 si el tipo de obstáculo es un segmento o 2 si es un triángulo.
+
+- Bug fixes
+    - Las posiciones de una trayectoria ahora se inicializan al comenzar un segmento.
+    - La puntuación de segmento ahora se calcula corectamente
+
+Versión 0.2
+- Features
+    - El cálculo de la puntuación de la trayectoria ya está implementado
+    - Las trayectorias pueden estar formadas por varios segmentos
+
+- Bug fixes.
+
+ - Función segment.getFin ahora devuelve el valor correcto
+
+- Changes
+
+    - Las clases robot y segment ya no necesitan la librería pygame. El dibujado del robot y el segmento se realiza desde el fichero principal
+    
+Versión 0.1 Versión Inicial
